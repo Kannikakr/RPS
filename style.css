@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body{
+    background-color: rgb(225, 252, 246);
+
+  }
+  h1 {
+    background-color: #bbdaec;
+    color: black;
+    height: 15vh; 
+    line-height: 5rem;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  .choice {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin: 1px solid black;
+  }
+  
+  .choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+  }
+  
+  img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5vh;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin-top: 5vh;
+    gap: 3rem;
+    color: black;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 5vw;
+  }
+  
+  .msg-container {
+    display: inline;
+    margin-top: 3vh;
+  }
+  
+  #msg {
+    color: black;
+    font-size: 30px;
+    padding: 3px;
+    font-weight: bolder;
+  }
+  
+  @media (max-width: 768px) {
+    .choices {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .choice {
+      height: 25vw;
+      width: 25vw;
+    }
+  
+    img {
+      height: 85%;
+      width: 85%;
+    }
+  
+    h1 {
+      font-size: 6vw; 
+      line-height: 7vh; 
+    }
+  
+    .score-board {
+      font-size: 4vw;
+      gap: 2rem;
+    }
+  
+    #user-score,
+    #comp-score {
+      font-size: 8vw;
+    }
+  
+    #msg {
+      font-size: 4vw;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .choice {
+      height: 35vw;
+      width: 35vw;
+    }
+  
+    img {
+      height: 80%;
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 8vw; 
+      line-height: 8vh; 
+    }
+  
+    .score-board {
+      font-size: 5vw;
+      gap: 1rem;
+    }
+  
+    #user-score,
+    #comp-score {
+      font-size: 10vw;
+    }
+  
+    #msg {
+      font-size: 5vw;
+      padding: 2rem;
+    }
+  }
+  
